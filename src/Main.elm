@@ -122,7 +122,7 @@ updateModel msg model =
                     model.windowDimensions
             in
             ( createNewModel currentWindowDimensions newMasterySettings
-            , Cmd.none
+            , Random.generate MsgDisplayNewQuestion ScatterPlotQuestion.scatterPlotQuestionGenerator
             )
 
         -- Something happened to change the window size, update the model to store the new size

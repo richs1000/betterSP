@@ -11610,7 +11610,7 @@ var $author$project$Main$updateModel = F2(
 				var currentWindowDimensions = model.windowDimensions;
 				return _Utils_Tuple2(
 					A2($author$project$Main$createNewModel, currentWindowDimensions, newMasterySettings),
-					$elm$core$Platform$Cmd$none);
+					A2($elm$random$Random$generate, $author$project$Main$MsgDisplayNewQuestion, $author$project$ScatterPlotQuestion$scatterPlotQuestionGenerator));
 			case 'MsgWindowSizeChanged':
 				var newWidth = msg.a;
 				var newHeight = msg.b;
